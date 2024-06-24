@@ -1,0 +1,18 @@
+<script>
+  function redirectToURL() {
+    // Define the URLs for desktop and mobile
+    var desktopURL = "https://wabi-sabi.rootmud.xyz/?template=15090&data=15091";
+    var mobileURL = "https://wabi-sabi.rootmud.xyz/?template=15102&data=15091";
+
+    // Check if the user's device is mobile
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      // Mobile device
+      window.location.href = mobileURL;
+    } else {
+      // Desktop device
+      window.location.href = desktopURL;
+    }
+  }
+
+  redirectToURL(); // Call the function to perform redirection
+</script>
